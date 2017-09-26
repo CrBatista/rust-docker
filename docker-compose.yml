@@ -1,0 +1,11 @@
+RustPostgresSQL:
+  image: postgres:9.4
+  container_name: RustPostgreSQL
+  ports:
+    - "5432:5432"
+  environment:
+    - DEBUG=false
+    - POSTGRES_USER=rust
+    - POSTGRES_PASSWORD=rust
+    - POSTGRES_DB=rust_db
+
